@@ -1,0 +1,23 @@
+Command: ["C:\\Python313\\python.exe", "-m", "unittest", "discover", "-s", "tests", "-p", "test_reconciliation.py", "-v"]
+
+test_T_002_source_only_key (test_reconciliation.ReconciliationTests.test_T_002_source_only_key) ... ok
+test_T_003_warehouse_only_key (test_reconciliation.ReconciliationTests.test_T_003_warehouse_only_key) ... ok
+test_T_004_row_count_delta_from_duplicate_not_fake_extra_key (test_reconciliation.ReconciliationTests.test_T_004_row_count_delta_from_duplicate_not_fake_extra_key) ... ok
+test_T_005_equal_counts_swapped_ids_detected (test_reconciliation.ReconciliationTests.test_T_005_equal_counts_swapped_ids_detected) ... ok
+test_T_015_changed_name_preserves_both_raw_values_and_line (test_reconciliation.ReconciliationTests.test_T_015_changed_name_preserves_both_raw_values_and_line) ... ok
+test_T_016_decimal_precision_and_numeric_equivalence (test_reconciliation.ReconciliationTests.test_T_016_decimal_precision_and_numeric_equivalence) ... ok
+test_T_017_reordering_does_not_create_differences (test_reconciliation.ReconciliationTests.test_T_017_reordering_does_not_create_differences) ... ok
+test_T_018_ambiguity_blocks_authoritative_pair_comparison (test_reconciliation.ReconciliationTests.test_T_018_ambiguity_blocks_authoritative_pair_comparison) ... ok
+test_T_019_source_negative_is_not_an_etl_root_cause (test_reconciliation.ReconciliationTests.test_T_019_source_negative_is_not_an_etl_root_cause) ... ok
+test_T_023_case_and_whitespace_are_not_auto_normalized (test_reconciliation.ReconciliationTests.test_T_023_case_and_whitespace_are_not_auto_normalized) ... ok
+test_T_024_valid_but_different_dates (test_reconciliation.ReconciliationTests.test_T_024_valid_but_different_dates) ... ok
+test_changed_currency_is_flagged_separately_from_value (test_reconciliation.ReconciliationTests.test_changed_currency_is_flagged_separately_from_value) ... ok
+test_one_to_many_and_many_to_one_and_many_to_many_all_ambiguous (test_reconciliation.ReconciliationTests.test_one_to_many_and_many_to_one_and_many_to_many_all_ambiguous) ... ok
+test_original_numeric_formatting_only_is_not_mismatch (test_reconciliation.ReconciliationTests.test_original_numeric_formatting_only_is_not_mismatch) ... ok
+test_raw_key_001_differs_from_key_1 (test_reconciliation.ReconciliationTests.test_raw_key_001_differs_from_key_1) ... ok
+test_unmatchable_blank_ID_never_matches_other_blank_ID (test_reconciliation.ReconciliationTests.test_unmatchable_blank_ID_never_matches_other_blank_ID) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.022s
+
+OK

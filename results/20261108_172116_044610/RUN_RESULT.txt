@@ -1,0 +1,6 @@
+Overall runner: PASS
+Automated tests: 53/53 expected
+Real-data status: DATA_VIOLATIONS_FOUND
+Data findings: 12
+Independent baseline: PASS
+Evidence: C:\Users\moham\Downloads\Financial_Data_Quality_Portfolio\financial-data-quality-testing\results\20261108_172116_044610

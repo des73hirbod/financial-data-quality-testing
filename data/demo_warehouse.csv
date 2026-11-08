@@ -1,0 +1,10 @@
+security_id,ticker,security_name,security_type,currency,market_value,as_of_date
+101,ABC,Alpha Holdings,EQUITY,USD,100.00,2026-02-03
+102,BND,Bright Bonds,BOND,EUR,201.00,2026-02-03
+104,DUP,Delta Inc,EQUITY,USD,400.00,2026-02-03
+104,DUP,Delta Inc,EQUITY,USD,401.00,2026-02-03
+105,MUF,,MUTUAL_FUND,JPY,500.00,2026-02-03
+106,CUR,Currency Holdings,EQUITY,USX,600.00,2026-02-03
+107,NEG,Negative Example,EQUITY,USD,-50.00,2026-02-03
+108,CLN,Clean Asset,EQUITY,USD,800.00,2026-02-03
+109,NEW,New Security,EQUITY,USD,900.00,2026-02-03

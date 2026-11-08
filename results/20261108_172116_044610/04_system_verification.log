@@ -1,0 +1,23 @@
+Command: ["C:\\Python313\\python.exe", "-m", "unittest", "discover", "-s", "tests", "-p", "test_behavior.py", "-v"]
+
+test_T_020_fully_clean_fixture_is_clean_and_repeatable (test_behavior.EndToEndBehaviorTests.test_T_020_fully_clean_fixture_is_clean_and_repeatable) ... ok
+test_deliberate_missing_and_extra_do_not_cancel (test_behavior.EndToEndBehaviorTests.test_deliberate_missing_and_extra_do_not_cancel) ... ok
+test_enforce_mode_clean_data_returns_success (test_behavior.EndToEndBehaviorTests.test_enforce_mode_clean_data_returns_success) ... ok
+test_enforce_mode_returns_one_for_proposed_blockers (test_behavior.EndToEndBehaviorTests.test_enforce_mode_returns_one_for_proposed_blockers) ... ok
+test_incomplete_policy_does_not_downgrade_validation_silently (test_behavior.EndToEndBehaviorTests.test_incomplete_policy_does_not_downgrade_validation_silently) ... ok
+test_injected_duplicate_has_evidence_and_no_ambiguous_field_compare (test_behavior.EndToEndBehaviorTests.test_injected_duplicate_has_evidence_and_no_ambiguous_field_compare) ... ok
+test_injected_validity_problems_have_separate_source_warehouse_provenance (test_behavior.EndToEndBehaviorTests.test_injected_validity_problems_have_separate_source_warehouse_provenance) ... ok
+test_invalid_policy_is_not_silently_accepted (test_behavior.EndToEndBehaviorTests.test_invalid_policy_is_not_silently_accepted) ... ok
+test_metamorphic_row_shuffle_changes_no_substantive_findings (test_behavior.EndToEndBehaviorTests.test_metamorphic_row_shuffle_changes_no_substantive_findings) ... ok
+test_missing_file_is_execution_error_not_clean (test_behavior.EndToEndBehaviorTests.test_missing_file_is_execution_error_not_clean) ... ok
+test_mutation_changes_exactly_one_attribute (test_behavior.EndToEndBehaviorTests.test_mutation_changes_exactly_one_attribute) ... ok
+test_provisional_domain_alert_does_not_block_enforce_mode (test_behavior.EndToEndBehaviorTests.test_provisional_domain_alert_does_not_block_enforce_mode) ... ok
+test_report_contains_input_hashes_and_stable_issue_locations (test_behavior.EndToEndBehaviorTests.test_report_contains_input_hashes_and_stable_issue_locations) ... ok
+test_roundtrip_csv_quoted_comma_does_not_create_bad_fields (test_behavior.EndToEndBehaviorTests.test_roundtrip_csv_quoted_comma_does_not_create_bad_fields) ... ok
+test_runner_error_must_overwrite_stale_clean_report (test_behavior.EndToEndBehaviorTests.test_runner_error_must_overwrite_stale_clean_report) ... ok
+test_unexpected_internal_failure_is_not_a_clean_result (test_behavior.EndToEndBehaviorTests.test_unexpected_internal_failure_is_not_a_clean_result) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.370s
+
+OK

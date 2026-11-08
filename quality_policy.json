@@ -1,0 +1,50 @@
+{
+  "policy_id": "demo-candidate-policy-v1",
+  "notes": "Illustrative, incomplete domain allowlists for the synthetic demonstration. Not an authoritative financial-market contract. Set allowlists to null when rules are unknown.",
+  "required_fields": [
+    "security_id",
+    "ticker",
+    "security_name",
+    "security_type",
+    "currency",
+    "market_value",
+    "as_of_date"
+  ],
+  "required_fields_authority": "provisional interpretation of README required-field question",
+  "allowed_security_types": [
+    "BOND",
+    "EQUITY",
+    "ETF",
+    "MUTUAL_FUND"
+  ],
+  "allowed_currencies": [
+    "EUR",
+    "GBP",
+    "JPY",
+    "USD"
+  ],
+  "allowed_values_authority": "PROVISIONAL CANDIDATES only: selected simple sample categories; possible legitimate currencies and instruments may be missing. Not approved by business owner.",
+  "reject_negative_market_value": true,
+  "allow_zero_market_value": true,
+  "market_value_decision_status": "provisional: nonnegative rule and zero allowance",
+  "date_format": "YYYY-MM-DD",
+  "text_comparison": "exact-raw",
+  "numeric_tolerance": "0",
+  "numeric_tolerance_authority": "unresolved: exact Decimal equality assumed; no approved tolerance",
+  "dispositions_are": "engineering proposals, not employer-approved enforcement",
+  "proposed_dispositions": {
+    "missing_key": "FAIL_PIPELINE",
+    "duplicate_key": "FAIL_PIPELINE",
+    "missing_required": "ALERT",
+    "invalid_amount": "FAIL_PIPELINE",
+    "negative_market_value": "ALERT",
+    "invalid_date": "FAIL_PIPELINE",
+    "domain_type": "ALERT",
+    "domain_currency": "ALERT",
+    "missing_record": "FAIL_PIPELINE",
+    "extra_record": "FAIL_PIPELINE",
+    "row_count_difference": "ALERT",
+    "ambiguous_match": "FAIL_PIPELINE",
+    "attribute_mismatch": "ALERT"
+  }
+}

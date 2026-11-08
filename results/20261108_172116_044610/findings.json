@@ -1,0 +1,408 @@
+{
+  "execution_mode": "diagnostic",
+  "findings": [
+    {
+      "category": "ambiguous_match",
+      "disposition_proposal": "FAIL_PIPELINE",
+      "field": "security_id",
+      "message": "No authoritative field comparison: key is not unique on both sides",
+      "policy_status": "EXPLICIT_KEY_UNIQUENESS_AND_PROVISIONAL_RECONCILIATION",
+      "raw_value": "104",
+      "rule_id": "R-RECON",
+      "security_id": "104",
+      "side": "paired",
+      "source_occurrences": 1,
+      "source_records": [
+        {
+          "location": {
+            "line_end": 5,
+            "line_start": 5,
+            "side": "source"
+          },
+          "values": {
+            "as_of_date": "2026-02-03",
+            "currency": "USD",
+            "market_value": "400.00",
+            "security_id": "104",
+            "security_name": "Delta Inc",
+            "security_type": "EQUITY",
+            "ticker": "DUP"
+          }
+        }
+      ],
+      "warehouse_occurrences": 2,
+      "warehouse_records": [
+        {
+          "location": {
+            "line_end": 4,
+            "line_start": 4,
+            "side": "warehouse"
+          },
+          "values": {
+            "as_of_date": "2026-02-03",
+            "currency": "USD",
+            "market_value": "400.00",
+            "security_id": "104",
+            "security_name": "Delta Inc",
+            "security_type": "EQUITY",
+            "ticker": "DUP"
+          }
+        },
+        {
+          "location": {
+            "line_end": 5,
+            "line_start": 5,
+            "side": "warehouse"
+          },
+          "values": {
+            "as_of_date": "2026-02-03",
+            "currency": "USD",
+            "market_value": "401.00",
+            "security_id": "104",
+            "security_name": "Delta Inc",
+            "security_type": "EQUITY",
+            "ticker": "DUP"
+          }
+        }
+      ]
+    },
+    {
+      "category": "attribute_mismatch",
+      "comparison_policy": "exact_decimal",
+      "disposition_proposal": "ALERT",
+      "field": "market_value",
+      "message": "Values differ; pipeline root cause is unproven",
+      "policy_status": "PROVISIONAL_NO_APPROVED_TRANSFORMS",
+      "rule_id": "R-ATTR-COMP",
+      "security_id": "102",
+      "side": "paired",
+      "source_location": {
+        "line_end": 3,
+        "line_start": 3,
+        "side": "source"
+      },
+      "source_raw": "200.00",
+      "warehouse_location": {
+        "line_end": 3,
+        "line_start": 3,
+        "side": "warehouse"
+      },
+      "warehouse_raw": "201.00"
+    },
+    {
+      "category": "attribute_mismatch",
+      "comparison_policy": "exact_raw",
+      "disposition_proposal": "ALERT",
+      "field": "security_name",
+      "message": "Values differ; pipeline root cause is unproven",
+      "policy_status": "PROVISIONAL_NO_APPROVED_TRANSFORMS",
+      "rule_id": "R-ATTR-COMP",
+      "security_id": "105",
+      "side": "paired",
+      "source_location": {
+        "line_end": 6,
+        "line_start": 6,
+        "side": "source"
+      },
+      "source_raw": "Mutual Fund",
+      "warehouse_location": {
+        "line_end": 6,
+        "line_start": 6,
+        "side": "warehouse"
+      },
+      "warehouse_raw": ""
+    },
+    {
+      "category": "attribute_mismatch",
+      "comparison_policy": "exact_raw",
+      "disposition_proposal": "ALERT",
+      "field": "currency",
+      "message": "Values differ; pipeline root cause is unproven",
+      "policy_status": "PROVISIONAL_NO_APPROVED_TRANSFORMS",
+      "rule_id": "R-ATTR-COMP",
+      "security_id": "106",
+      "side": "paired",
+      "source_location": {
+        "line_end": 7,
+        "line_start": 7,
+        "side": "source"
+      },
+      "source_raw": "USD",
+      "warehouse_location": {
+        "line_end": 7,
+        "line_start": 7,
+        "side": "warehouse"
+      },
+      "warehouse_raw": "USX"
+    },
+    {
+      "category": "domain_currency",
+      "disposition_proposal": "ALERT",
+      "field": "currency",
+      "location": {
+        "line_end": 7,
+        "line_start": 7,
+        "side": "warehouse"
+      },
+      "message": "Value not in configured allowlist for currency",
+      "policy_allowlist": [
+        "EUR",
+        "GBP",
+        "JPY",
+        "USD"
+      ],
+      "policy_status": "PROVISIONAL_CANDIDATE_ALLOWLIST",
+      "raw_value": "USX",
+      "rule_id": "R-CURRENCY-DOM",
+      "security_id": "106",
+      "side": "warehouse"
+    },
+    {
+      "category": "duplicate_key",
+      "disposition_proposal": "FAIL_PIPELINE",
+      "field": "security_id",
+      "location": {
+        "line_end": 4,
+        "line_start": 4,
+        "side": "warehouse"
+      },
+      "message": "Security ID occurs 2 times",
+      "occurrences": 2,
+      "policy_status": "EXPLICIT_OR_REASONABLE_REQUIREMENT",
+      "raw_value": "104",
+      "records": [
+        {
+          "location": {
+            "line_end": 4,
+            "line_start": 4,
+            "side": "warehouse"
+          },
+          "values": {
+            "as_of_date": "2026-02-03",
+            "currency": "USD",
+            "market_value": "400.00",
+            "security_id": "104",
+            "security_name": "Delta Inc",
+            "security_type": "EQUITY",
+            "ticker": "DUP"
+          }
+        },
+        {
+          "location": {
+            "line_end": 5,
+            "line_start": 5,
+            "side": "warehouse"
+          },
+          "values": {
+            "as_of_date": "2026-02-03",
+            "currency": "USD",
+            "market_value": "401.00",
+            "security_id": "104",
+            "security_name": "Delta Inc",
+            "security_type": "EQUITY",
+            "ticker": "DUP"
+          }
+        }
+      ],
+      "rule_id": "R-KEY",
+      "security_id": "104",
+      "side": "warehouse"
+    },
+    {
+      "category": "extra_record",
+      "disposition_proposal": "FAIL_PIPELINE",
+      "field": "security_id",
+      "location": {
+        "line_end": 10,
+        "line_start": 10,
+        "side": "warehouse"
+      },
+      "message": "Warehouse security ID absent from source",
+      "policy_status": "PROVISIONAL_FILTERING_UNKNOWN",
+      "raw_value": "109",
+      "records": [
+        {
+          "location": {
+            "line_end": 10,
+            "line_start": 10,
+            "side": "warehouse"
+          },
+          "values": {
+            "as_of_date": "2026-02-03",
+            "currency": "USD",
+            "market_value": "900.00",
+            "security_id": "109",
+            "security_name": "New Security",
+            "security_type": "EQUITY",
+            "ticker": "NEW"
+          }
+        }
+      ],
+      "rule_id": "R-RECON",
+      "security_id": "109",
+      "side": "warehouse"
+    },
+    {
+      "category": "missing_record",
+      "disposition_proposal": "FAIL_PIPELINE",
+      "field": "security_id",
+      "location": {
+        "line_end": 4,
+        "line_start": 4,
+        "side": "source"
+      },
+      "message": "Source security ID absent from warehouse",
+      "policy_status": "PROVISIONAL_FILTERING_UNKNOWN",
+      "raw_value": "103",
+      "records": [
+        {
+          "location": {
+            "line_end": 4,
+            "line_start": 4,
+            "side": "source"
+          },
+          "values": {
+            "as_of_date": "2026-02-03",
+            "currency": "GBP",
+            "market_value": "300.00",
+            "security_id": "103",
+            "security_name": "Equity Fund",
+            "security_type": "ETF",
+            "ticker": "ETF"
+          }
+        }
+      ],
+      "rule_id": "R-RECON",
+      "security_id": "103",
+      "side": "source"
+    },
+    {
+      "category": "missing_required",
+      "disposition_proposal": "ALERT",
+      "field": "security_name",
+      "location": {
+        "line_end": 6,
+        "line_start": 6,
+        "side": "warehouse"
+      },
+      "message": "Required field security_name is blank or whitespace",
+      "policy_status": "PROVISIONAL",
+      "raw_value": "",
+      "rule_id": "R-NAME-REQ",
+      "security_id": "105",
+      "side": "warehouse"
+    },
+    {
+      "category": "negative_market_value",
+      "disposition_proposal": "ALERT",
+      "field": "market_value",
+      "location": {
+        "line_end": 8,
+        "line_start": 8,
+        "side": "source"
+      },
+      "message": "Negative market value under provisional nonnegative rule",
+      "policy_status": "PROVISIONAL",
+      "raw_value": "-50.00",
+      "rule_id": "R-AMOUNT-NONNEG",
+      "security_id": "107",
+      "side": "source"
+    },
+    {
+      "category": "negative_market_value",
+      "disposition_proposal": "ALERT",
+      "field": "market_value",
+      "location": {
+        "line_end": 8,
+        "line_start": 8,
+        "side": "warehouse"
+      },
+      "message": "Negative market value under provisional nonnegative rule",
+      "policy_status": "PROVISIONAL",
+      "raw_value": "-50.00",
+      "rule_id": "R-AMOUNT-NONNEG",
+      "security_id": "107",
+      "side": "warehouse"
+    },
+    {
+      "category": "row_count_difference",
+      "difference": 1,
+      "disposition_proposal": "ALERT",
+      "field": null,
+      "message": "Row counts differ; this does not establish which identities changed",
+      "policy_status": "PROVISIONAL",
+      "rule_id": "R-RECON",
+      "security_id": null,
+      "side": "paired",
+      "source_rows": 8,
+      "warehouse_rows": 9
+    }
+  ],
+  "inputs": {
+    "source": {
+      "file": "demo_source.csv",
+      "sha256": "d4db78e56f88e26dbf47fede9f6880f6cbd84899f4250f3b9c08f57e1f5da092"
+    },
+    "warehouse": {
+      "file": "demo_warehouse.csv",
+      "sha256": "e1f890de06deebcd59d5280c84313e98593c386fa89484d2e5a3a2c69852f34c"
+    }
+  },
+  "policy_authority": "provisional candidate sample-domain allowlists; CTG-specific approved lists, transformations and SLAs unresolved",
+  "policy_id": "demo-candidate-policy-v1",
+  "proposed_blocker_count": 4,
+  "reconciliation": {
+    "ambiguous_shared_ids": [
+      "104"
+    ],
+    "attribute_mismatch_count": 3,
+    "attribute_mismatches_by_field": {
+      "currency": 1,
+      "market_value": 1,
+      "security_name": 1
+    },
+    "comparable_distinct_ids": 6,
+    "row_count_delta_warehouse_minus_source": 1,
+    "shared_distinct_ids": 7,
+    "source_blank_id_rows": 0,
+    "source_distinct_nonblank_ids": 8,
+    "source_key_multiplicities": {},
+    "source_only_ids": [
+      "103"
+    ],
+    "source_rows": 8,
+    "warehouse_blank_id_rows": 0,
+    "warehouse_distinct_nonblank_ids": 8,
+    "warehouse_key_multiplicities": {
+      "104": 2
+    },
+    "warehouse_only_ids": [
+      "109"
+    ],
+    "warehouse_rows": 9
+  },
+  "run_status": "DATA_VIOLATIONS_FOUND",
+  "schema_version": "ctg-quality-report.v1",
+  "summary": {
+    "counts_by_category": {
+      "ambiguous_match": 1,
+      "attribute_mismatch": 3,
+      "domain_currency": 1,
+      "duplicate_key": 1,
+      "extra_record": 1,
+      "missing_record": 1,
+      "missing_required": 1,
+      "negative_market_value": 2,
+      "row_count_difference": 1
+    },
+    "finding_count": 12,
+    "reconciliation_findings": 7,
+    "validation_findings": 5
+  },
+  "unresolved_policy_questions": [
+    "CTG-approved permitted security types and currencies (candidate sample-domain allowlists are not authoritative)",
+    "Authorized ETL transformations, currency conversions, formatting and rounding tolerance",
+    "Required fields, null encodings, acceptable negative/zero market values",
+    "Pipeline blocking SLAs, permitted filtering and record grain over time"
+  ]
+}

@@ -1,0 +1,21 @@
+Command: ["C:\\Python313\\python.exe", "-m", "unittest", "discover", "-s", "tests", "-p", "test_validation.py", "-v"]
+
+test_T_001_blank_security_id_preserved (test_validation.IndependentValidityTests.test_T_001_blank_security_id_preserved) ... ok
+test_T_006_warehouse_duplicate_preserves_both_conflicting_rows (test_validation.IndependentValidityTests.test_T_006_warehouse_duplicate_preserves_both_conflicting_rows) ... ok
+test_T_007_source_duplicate_not_just_warehouse (test_validation.IndependentValidityTests.test_T_007_source_duplicate_not_just_warehouse) ... ok
+test_T_008_empty_and_whitespace_names_with_exact_rows (test_validation.IndependentValidityTests.test_T_008_empty_and_whitespace_names_with_exact_rows) ... ok
+test_T_009_missing_ticker_under_explicit_provisional_requiredness (test_validation.IndependentValidityTests.test_T_009_missing_ticker_under_explicit_provisional_requiredness) ... ok
+test_T_010_fixture_security_type_allowlist_and_unknown_real_policy (test_validation.IndependentValidityTests.test_T_010_fixture_security_type_allowlist_and_unknown_real_policy) ... ok
+test_T_011_fixture_currency_allowlist_and_unknown_real_policy (test_validation.IndependentValidityTests.test_T_011_fixture_currency_allowlist_and_unknown_real_policy) ... ok
+test_T_012_finite_negative_and_provisional_zero_policy (test_validation.IndependentValidityTests.test_T_012_finite_negative_and_provisional_zero_policy) ... ok
+test_T_013_nonfinite_and_malformed_amounts_are_not_numbers (test_validation.IndependentValidityTests.test_T_013_nonfinite_and_malformed_amounts_are_not_numbers) ... ok
+test_T_014_invalid_calendar_day_and_strict_format (test_validation.IndependentValidityTests.test_T_014_invalid_calendar_day_and_strict_format) ... ok
+test_extra_three_or_more_duplicates_are_all_preserved (test_validation.IndependentValidityTests.test_extra_three_or_more_duplicates_are_all_preserved) ... ok
+test_lexical_key_identity_not_cast_to_integer (test_validation.IndependentValidityTests.test_lexical_key_identity_not_cast_to_integer) ... ok
+test_missing_numeric_field_reports_required_and_parse_separately (test_validation.IndependentValidityTests.test_missing_numeric_field_reports_required_and_parse_separately) ... ok
+test_positive_control_valid_record_reports_no_issues (test_validation.IndependentValidityTests.test_positive_control_valid_record_reports_no_issues) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.034s
+
+OK

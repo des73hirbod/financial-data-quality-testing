@@ -1,0 +1,14 @@
+Command: ["C:\\Python313\\python.exe", "-m", "unittest", "discover", "-s", "tests", "-p", "test_csv_loader.py", "-v"]
+
+test_blank_row_is_not_silently_skipped (test_csv_loader.LoadCSVTests.test_blank_row_is_not_silently_skipped) ... ok
+test_clean_file_loads_two_rows_without_changing_types (test_csv_loader.LoadCSVTests.test_clean_file_loads_two_rows_without_changing_types) ... ok
+test_invalid_utf8_rejected (test_csv_loader.LoadCSVTests.test_invalid_utf8_rejected) ... ok
+test_multiline_quoted_field_has_accurate_physical_lines (test_csv_loader.LoadCSVTests.test_multiline_quoted_field_has_accurate_physical_lines) ... ok
+test_quoted_comma_stays_inside_one_field (test_csv_loader.LoadCSVTests.test_quoted_comma_stays_inside_one_field) ... ok
+test_unclosed_quoted_field_is_rejected (test_csv_loader.LoadCSVTests.test_unclosed_quoted_field_is_rejected) ... ok
+test_wrong_width_fails_and_reports_physical_line (test_csv_loader.LoadCSVTests.test_wrong_width_fails_and_reports_physical_line) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.043s
+
+OK

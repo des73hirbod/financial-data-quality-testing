@@ -1,0 +1,7 @@
+Command: ["C:\\Python313\\python.exe", "evidence/verify_demo.py", "--report", "C:\\Users\\moham\\Downloads\\Financial_Data_Quality_Portfolio\\financial-data-quality-testing\\results\\20261108_172116_044610\\findings.json"]
+
+{
+  "status": "PASS",
+  "fixture": "authored demonstration",
+  "differences": {}
+}
